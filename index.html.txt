@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣零售版圖導覽 - 四大體系分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .brand-card {
+            transition: all 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #10b981);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800 flex items-center">
+                <i class="fas fa-shopping-cart text-blue-600 mr-2"></i>
+                台灣零售版圖導覽
+            </h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 text-sm font-medium text-gray-500">
+                    <li class="hover:text-blue-600 cursor-pointer"><a href="costco.html">好市多專頁</a></li>
+                    <li class="hover:text-blue-600 cursor-pointer"><a href="pxmart.html">全聯專頁</a></li>
+                    <li class="hover:text-blue-600 cursor-pointer"><a href="carrefour.html">家樂福專頁</a></li>
+                    <li class="hover:text-blue-600 cursor-pointer"><a href="amart.html">愛買專頁</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">台灣四大零售體系特色分析</h2>
+            <p class="text-xl md:text-2xl opacity-90 max-w-4xl mx-auto mt-4">
+                隨著大潤發併入全聯、家樂福併入統一，台灣零售業正式進入強強聯手的全通路時代。
+            </p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12 space-y-12">
+
+        <article id="costco" class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-red-600">
+            <div class="p-8 flex flex-col items-center">
+                <div class="w-full text-center mb-8">
+                    <div class="uppercase tracking-widest text-sm text-red-600 font-bold mb-2">美式倉儲會員制霸主</div>
+                    <a href="costco.html" class="hover:underline"><h3 class="text-3xl font-bold text-black mb-2">好市多：堅持付費會員制的市場巨人</h3></a>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 w-full">
+                    <div>
+                        <h4 class="font-bold text-gray-900 flex items-center border-b pb-2 mb-4"><i class="fas fa-gem text-yellow-500 mr-2"></i>核心特色</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>會員制度：</strong>透過年費精準篩選高消費力家庭客群。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>獨家商品：</strong>Kirkland Signature 自有品牌提供極高性價比。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-400">
+                        <h4 class="font-bold text-red-800 text-lg mb-2"><i class="fas fa-external-link-alt mr-2 text-red-600"></i><a href="costco.html" class="underline">點此查看詳細經營方法與典故</a></h4>
+                        <p class="text-red-700 leading-relaxed">持續推動數位轉型與線上購物，發行聯名卡，維持台灣單店營收最高紀錄。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="pxmart" class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-blue-600">
+            <div class="p-8 flex flex-col items-center">
+                <div class="w-full text-center mb-8">
+                    <div class="uppercase tracking-widest text-sm text-blue-600 font-bold mb-2">超市量販雙引擎龍頭</div>
+                    <a href="pxmart.html" class="hover:underline"><h3 class="text-3xl font-bold text-black mb-2">全聯集團：全台最大的生鮮冷鏈集團</h3></a>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 w-full">
+                    <div>
+                        <h4 class="font-bold text-gray-900 flex items-center border-b pb-2 mb-4"><i class="fas fa-gem text-yellow-500 mr-2"></i>核心特色 (整合大潤發)</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>全通路覆蓋：</strong>結合超市(全聯)與大賣場(大潤發)。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>支付生態圈：</strong>透過 PX Pay 點數經濟牢牢抓住千萬會員。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-400">
+                        <h4 class="font-bold text-blue-800 text-lg mb-2"><i class="fas fa-external-link-alt mr-2 text-blue-600"></i><a href="pxmart.html" class="

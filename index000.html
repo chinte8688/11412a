@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣零售版圖 - 深度經營分析</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; scroll-behavior: smooth; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .nav-link.active { border-bottom: 4px solid #3b82f6; color: #3b82f6; }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center py-4">
+                <h1 class="text-2xl font-bold flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-chart-line text-blue-600 mr-2"></i> 台灣零售經營深度導覽
+                </h1>
+                <nav id="main-nav" class="flex space-x-2 md:space-x-6 font-medium overflow-x-auto w-full md:w-auto">
+                    <button onclick="showTab('costco')" class="nav-link active px-3 py-2 whitespace-nowrap">好市多</button>
+                    <button onclick="showTab('pxmart')" class="nav-link px-3 py-2 whitespace-nowrap">全聯體系</button>
+                    <button onclick="showTab('carrefour')" class="nav-link px-3 py-2 whitespace-nowrap">家樂福</button>
+                    <button onclick="showTab('amart')" class="nav-link px-3 py-2 whitespace-nowrap">愛買</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <section id="costco" class="tab-content active">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-6">
+                    <img src="001.jpg" class="rounded-2xl shadow-xl w-full" alt="Costco">
+                    <div class="bg-red-600 text-white p-6 rounded-xl">
+                        <h2 class="text-3xl font-bold mb-2">好市多 (Costco)</h2>
+                        <p class="text-lg opacity-90">核心精神：以最低價格提供最高品質的商品</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 border-l-4 border-red-600 pl-3 mb-4">經營理念</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-id-card text-red-500 mt-1 mr-3"></i>
+                                <span><strong>會員制度制霸：</strong> 透過付費年費精準篩選具備高消費力的家庭客群。</span>
+                            </li>
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-tags text-red-500 mt-1 mr-3"></i>
+                                <span><strong>獨家商品策略：</strong> Kirkland Signature 自有品牌提供極高性價比，建立品牌忠誠度。</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-red-500">
+                        <h3 class="text-xl font-bold mb-3">永續發展願景</h3>
+                        <p class="text-gray-600 leading-relaxed">持續推動數位轉型與線上購物，發行聯名卡以整合數位支付生態，並維持單店最高營收紀錄。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pxmart" class="tab-content">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-2">
+                        <img src="002.jpg" class="rounded-xl shadow-md h-full object-cover" alt="PX Mart">
+                        <img src="003.jpg" class="rounded-xl shadow-md h-full object-cover" alt="RT Mart">
+                    </div>
+                    <div class="bg-blue-600 text-white p-6 rounded-xl">
+                        <h2 class="text-3xl font-bold mb-2">全聯體系 (含大潤發)</h2>
+                        <p class="text-lg opacity-90">核心精神：全台最大的生鮮冷鏈與社區超市網絡</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 border-l-4 border-blue-600 pl-3 mb-4">經營理念</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-store text-blue-500 mt-1 mr-3"></i>
+                                <span><strong>全通路覆蓋：</strong> 結合超市 (全聯) 與大賣場 (大潤發)，提供多元購物理路徑。</span>
+                            </li>
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-wallet text-blue-500 mt-1 mr-3"></i>
+                                <span><strong>支付生態圈：</strong> 透過 PX Pay 點數經濟牢牢抓住千萬會員並進行大數據分析。</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
+                        <h3 class="text-xl font-bold mb-3">永續發展願景</h3>
+                        <p class="text-gray-600 leading-relaxed">強化供應鏈整合，將門市定位為「生鮮倉儲中心」，並積極推動「小時達」外送服務以減少實體採買碳足跡。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrefour" class="tab-content">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-6">
+                    <img src="004.jpg" class="rounded-2xl shadow-xl w-full" alt="Carrefour">
+                    <div class="bg-sky-500 text-white p-6 rounded-xl">
+                        <h2 class="text-3xl font-bold mb-2">家樂福體系 (統一集團)</h2>
+                        <p class="text-lg opacity-90">核心精神：結合民生工業與生活零售的巨擘</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 border-l-4 border-sky-500 pl-3 mb-4">經營理念</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-layer-group text-sky-500 mt-1 mr-3"></i>
+                                <span><strong>混合店型策略：</strong> 維持量販店、超市 (原頂好) 及便利店等多樣化佈局。</span>
+                            </li>
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-link text-sky-500 mt-1 mr-3"></i>
+                                <span><strong>統一資源整合：</strong> 結合 7-11 與康是美，進行深度集團點數與物流網整合。</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-sky-500">
+                        <h3 class="text-xl font-bold mb-3">永續發展願景</h3>
+                        <p class="text-gray-600 leading-relaxed">領先推動食物轉型、設立有機專區與推廣非籠飼雞蛋，並強化「家速配」快商務體驗。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="amart" class="tab-content">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div class="space-y-6">
+                    <img src="005.jpg" class="rounded-2xl shadow-xl w-full" alt="a.mart">
+                    <div class="bg-orange-500 text-white p-6 rounded-xl">
+                        <h2 class="text-3xl font-bold mb-2">愛買 (a.mart)</h2>
+                        <p class="text-lg opacity-90">核心精神：在地化經營的百貨級量販體驗</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 border-l-4 border-orange-500 pl-3 mb-4">經營理念</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-users text-orange-500 mt-1 mr-3"></i>
+                                <span><strong>百貨聯動生態：</strong> 結合遠東 SOGO、遠百與 HAPPY GO 點數體系。</span>
+                            </li>
+                            <li class="flex items-start bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-leaf text-orange-500 mt-1 mr-3"></i>
+                                <span><strong>在地農業深耕：</strong> 強調農產直採與親民的節慶行銷服務。</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                        <h3 class="text-xl font-bold mb-3">永續發展願景</h3>
+                        <p class="text-gray-600 leading-relaxed">朝向精緻化與社區化轉型，利用遠東集團數位通路強化線上線下整合，推動高品質親子購物空間。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-gray-400 py-10 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 台灣零售版圖分析報告 - 深度導覽分頁版</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // 隱藏所有分頁
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // 移除導航活動狀態
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => link.classList.remove('active'));
+            
+            // 顯示目標分頁
+            document.getElementById(tabId).classList.add('active');
+            
+            // 設定導航按鈕活動狀態
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
