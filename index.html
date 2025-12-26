@@ -14,10 +14,11 @@
         }
         .brand-card {
             transition: all 0.3s ease;
+            cursor: pointer;
         }
         .brand-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
         .section-title {
             position: relative;
@@ -33,6 +34,19 @@
             background: linear-gradient(90deg, #3b82f6, #10b981);
             border-radius: 2px;
         }
+        .link-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1f2937;
+            color: white;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .link-btn:hover {
+            background-color: #374151;
+        }
     </style>
 </head>
 <body class="text-gray-700">
@@ -45,162 +59,116 @@
             </h1>
             <nav class="hidden md:block">
                 <ul class="flex space-x-6 text-sm font-medium text-gray-500">
-                    <li class="hover:text-blue-600 cursor-pointer"><a href="costco.html">好市多專頁</a></li>
-                    <li class="hover:text-blue-600 cursor-pointer"><a href="pxmart.html">全聯專頁</a></li>
-                    <li class="hover:text-blue-600 cursor-pointer"><a href="carrefour.html">家樂福專頁</a></li>
-                    <li class="hover:text-blue-600 cursor-pointer"><a href="amart.html">愛買專頁</a></li>
+                    <li class="hover:text-blue-600"><a href="costco.html">好市多</a></li>
+                    <li class="hover:text-blue-600"><a href="pxmart.html">全聯(含大潤發)</a></li>
+                    <li class="hover:text-blue-600"><a href="carrefour.html">家樂福</a></li>
+                    <li class="hover:text-blue-600"><a href="amart.html">愛買</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-16">
-        <div class="container mx-auto px-4 text-center">
+    <section class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-16 text-center">
+        <div class="container mx-auto px-4">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">台灣四大零售體系特色分析</h2>
-            <p class="text-xl md:text-2xl opacity-90 max-w-4xl mx-auto mt-4">
-                隨著大潤發併入全聯、家樂福併入統一，台灣零售業正式進入強強聯手的全通路時代。
+            <p class="text-xl opacity-90 max-w-4xl mx-auto mt-4">
+                探索台灣零售業龍頭的經營理念、典故與永續發展願景。點擊下方卡片進入詳細專頁。
             </p>
         </div>
     </section>
 
-    <main class="container mx-auto px-4 py-12 space-y-12">
-
-        <article id="costco" class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-red-600">
-            <div class="p-8 flex flex-col items-center">
-                <div class="w-full text-center mb-8">
-                    <div class="uppercase tracking-widest text-sm text-red-600 font-bold mb-2">美式倉儲會員制霸主</div>
-                    <a href="costco.html" class="hover:underline"><h3 class="text-3xl font-bold text-black mb-2">好市多：堅持付費會員制的市場巨人</h3></a>
+    <main class="container mx-auto px-4 py-12">
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-red-600 p-8 flex flex-col justify-between">
+                <div>
+                    <img src="001.png" alt="Costco" width="200" height="200" class="h-18 mb-6">
+                    <h3 class="text-2xl font-bold mb-4">好市多 (Costco)</h3>
+                    <p class="text-gray-600 mb-6">美式倉儲會員制霸主。堅持低毛利與 Kirkland Signature 自有品牌策略。</p>
                 </div>
-                
-                <div class="grid md:grid-cols-2 gap-8 w-full">
-                    <div>
-                        <h4 class="font-bold text-gray-900 flex items-center border-b pb-2 mb-4"><i class="fas fa-gem text-yellow-500 mr-2"></i>核心特色</h4>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>會員制度：</strong>透過年費精準篩選高消費力家庭客群。</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>獨家商品：</strong>Kirkland Signature 自有品牌提供極高性價比。</span></li>
-                        </ul>
-                    </div>
-                    <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-400">
-                        <h4 class="font-bold text-red-800 text-lg mb-2"><i class="fas fa-external-link-alt mr-2 text-red-600"></i><a href="costco.html" class="underline">點此查看詳細經營方法與典故</a></h4>
-                        <p class="text-red-700 leading-relaxed">持續推動數位轉型與線上購物，發行聯名卡，維持台灣單店營收最高紀錄。</p>
-                    </div>
-                </div>
+                <a href="costco.html" class="link-btn self-start">
+                    進入詳細分頁 <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                </a>
             </div>
-        </article>
 
-        <article id="pxmart" class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-blue-600">
-            <div class="p-8 flex flex-col items-center">
-                <div class="w-full text-center mb-8">
-                    <div class="uppercase tracking-widest text-sm text-blue-600 font-bold mb-2">超市量販雙引擎龍頭</div>
-                    <a href="pxmart.html" class="hover:underline"><h3 class="text-3xl font-bold text-black mb-2">全聯集團：全台最大的生鮮冷鏈集團</h3></a>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-8 w-full">
-                    <div>
-                        <h4 class="font-bold text-gray-900 flex items-center border-b pb-2 mb-4"><i class="fas fa-gem text-yellow-500 mr-2"></i>核心特色 (整合大潤發)</h4>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>全通路覆蓋：</strong>結合超市(全聯)與大賣場(大潤發)。</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>支付生態圈：</strong>透過 PX Pay 點數經濟牢牢抓住千萬會員。</span></li>
-                        </ul>
+            <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-blue-600 p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex space-x-4 mb-6">
+                        <img src="002.png" alt="PX Mart" class="h-10">
+                        <img src="003.png" alt="RT-Mart" class="h-10">
                     </div>
-                    <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-400">
-                        <h4 class="font-bold text-blue-800 text-lg mb-2"><i class="fas fa-external-link-alt mr-2 text-blue-600"></i><a href="pxmart.html" class="underline">點此查看詳細併購策略</a></h4>
-                        <p class="text-blue-700 leading-relaxed">強化供應鏈整合，定位為「生鮮倉儲中心」，並積極推動「小時達」服務。</p>
-                    </div>
+                    <h3 class="text-2xl font-bold mb-4">全聯體系 (含大潤發)</h3>
+                    <p class="text-gray-600 mb-6">全台最大生鮮冷鏈集團。整合超市與量販，建立 PX Pay 支付生態圈。</p>
                 </div>
+                <a href="pxmart.html" class="link-btn self-start">
+                    進入詳細分頁 <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                </a>
             </div>
-        </article>
 
-        <article id="carrefour" class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-blue-400">
-            <div class="p-8 flex flex-col items-center">
-                <div class="w-full text-center mb-8">
-                    <div class="uppercase tracking-widest text-sm text-blue-400 font-bold mb-2">統一集團全通路生態圈</div>
-                    <a href="carrefour.html" class="hover:underline"><h3 class="text-3xl font-bold text-black mb-2">家樂福：結合民生工業與零售的巨擘</h3></a>
+            <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-blue-400 p-8 flex flex-col justify-between">
+                <div>
+                    <img src="004.png" alt="Carrefour" class="h-12 mb-6">
+                    <h3 class="text-2xl font-bold mb-4">家樂福體系</h3>
+                    <p class="text-gray-600 mb-6">統一集團全通路生態圈。領先推動食物轉型、有機專區與非籠飼雞蛋。</p>
                 </div>
-                
-                <div class="grid md:grid-cols-2 gap-8 w-full">
-                    <div>
-                        <h4 class="font-bold text-gray-900 flex items-center border-b pb-2 mb-4"><i class="fas fa-gem text-yellow-500 mr-2"></i>核心特色</h4>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>混合店型：</strong>維持量販店與超市(原頂好)雙店型。</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>統一資源：</strong>結合 7-11 與康是美進行深度整合。</span></li>
-                        </ul>
-                    </div>
-                    <div class="bg-sky-50 p-6 rounded-xl border-l-4 border-sky-400">
-                        <h4 class="font-bold text-sky-800 text-lg mb-2"><i class="fas fa-external-link-alt mr-2 text-sky-600"></i><a href="carrefour.html" class="underline">點此查看永續發展願景</a></h4>
-                        <p class="text-sky-700 leading-relaxed">強化「家速配」快商務，並利用統一集團強大的物流網提升體驗。</p>
-                    </div>
-                </div>
+                <a href="carrefour.html" class="link-btn self-start">
+                    進入詳細分頁 <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                </a>
             </div>
-        </article>
 
-        <article id="amart" class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-orange-500">
-            <div class="p-8 flex flex-col items-center">
-                <div class="w-full text-center mb-8">
-                    <div class="uppercase tracking-widest text-sm text-orange-500 font-bold mb-2">遠東集團零售板塊</div>
-                    <a href="amart.html" class="hover:underline"><h3 class="text-3xl font-bold text-black mb-2">愛買：強調家庭與在地化的百貨級量販</h3></a>
+            <div class="brand-card bg-white rounded-xl overflow-hidden shadow-lg border-t-8 border-orange-500 p-8 flex flex-col justify-between">
+                <div>
+                    <img src="005.png" alt="a.mart" class="h-12 mb-6">
+                    <h3 class="text-2xl font-bold mb-4">愛買 (a.mart)</h3>
+                    <p class="text-gray-600 mb-6">遠東集團零售板塊。強調在地農業支持與精緻化的親子購物空間。</p>
                 </div>
-                
-                <div class="grid md:grid-cols-2 gap-8 w-full">
-                    <div>
-                        <h4 class="font-bold text-gray-900 flex items-center border-b pb-2 mb-4"><i class="fas fa-gem text-yellow-500 mr-2"></i>核心特色</h4>
-                        <ul class="space-y-3 text-gray-600">
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>百貨聯動：</strong>結合 SOGO、遠百與 HAPPY GO 點數。</span></li>
-                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>在地農業：</strong>深耕本土農產直採。</span></li>
-                        </ul>
-                    </div>
-                    <div class="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-400">
-                        <h4 class="font-bold text-orange-800 text-lg mb-2"><i class="fas fa-external-link-alt mr-2 text-orange-600"></i><a href="amart.html" class="underline">點此查看詳細經營理念</a></h4>
-                        <p class="text-orange-700 leading-relaxed">朝向精緻化與社區化經營，利用遠東集團數位通路強化整合。</p>
-                    </div>
-                </div>
+                <a href="amart.html" class="link-btn self-start">
+                    進入詳細分頁 <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                </a>
             </div>
-        </article>
+        </div>
 
-        <section class="mt-20 mb-8">
-            <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center section-title">四大零售體系現況比較</h2>
-            <div class="overflow-x-auto bg-white rounded-xl shadow-lg border border-gray-100">
+        <section class="mt-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center section-title">零售體系核心優勢摘要</h2>
+            <div class="overflow-x-auto bg-white rounded-xl shadow-lg">
                 <table class="min-w-full table-auto">
-                    <thead class="bg-slate-800 text-white">
+                    <thead class="bg-slate-800 text-white text-left">
                         <tr>
-                            <th class="px-6 py-5 text-left text-sm uppercase">體系名稱 (點擊查看詳情)</th>
-                            <th class="px-6 py-5 text-left text-sm uppercase">集團背景</th>
-                            <th class="px-6 py-5 text-left text-sm uppercase">通路型態</th>
+                            <th class="px-6 py-4">體系</th>
+                            <th class="px-6 py-4">集團背景</th>
+                            <th class="px-6 py-4">核心優勢</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100">
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 font-bold text-red-600"><a href="costco.html" class="underline">好市多 (Costco)</a></td>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-red-600">好市多</td>
                             <td class="px-6 py-4">美商直營</td>
-                            <td class="px-6 py-4">會員制量販</td>
+                            <td class="px-6 py-4">會員制量販、進口獨家商品</td>
                         </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 font-bold text-blue-600"><a href="pxmart.html" class="underline">全聯體系</a></td>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-blue-600">全聯體系</td>
                             <td class="px-6 py-4">林敏雄家族 (併購大潤發)</td>
-                            <td class="px-6 py-4">社區超市 + 大型量販</td>
+                            <td class="px-6 py-4">據點最密、生鮮採購力強</td>
                         </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 font-bold text-blue-400"><a href="carrefour.html" class="underline">家樂福體系</a></td>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-blue-400">家樂福</td>
                             <td class="px-6 py-4">統一集團</td>
-                            <td class="px-6 py-4">量販 + 超市 + 便利店</td>
+                            <td class="px-6 py-4">全通路布局、集團點數通用</td>
                         </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 font-bold text-orange-500"><a href="amart.html" class="underline">愛買 (a.mart)</a></td>
+                        <tr>
+                            <td class="px-6 py-4 font-bold text-orange-500">愛買</td>
                             <td class="px-6 py-4">遠東集團</td>
-                            <td class="px-6 py-4">百貨型量販</td>
+                            <td class="px-6 py-4">在地化行銷、集團百貨資源</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-
     </main>
 
-    <footer class="bg-slate-900 text-gray-400 py-10">
-        <div class="container mx-auto px-4 text-center">
-            <p class="mb-2">&copy; 2024-2025 台灣零售版圖分析報告</p>
-            <p class="text-xs opacity-50">註：大潤發自 2022 年起正式併入全聯體系，統計數據已進行整合。</p>
-        </div>
+    <footer class="bg-slate-900 text-gray-400 py-10 mt-20 text-center">
+        <p>&copy; 2024-2025 台灣零售版圖分析報告</p>
+        <p class="text-xs opacity-50 mt-2">註：大潤發自 2022 年起正式併入全聯體系，統計數據已進行整合。</p>
     </footer>
 
 </body>
